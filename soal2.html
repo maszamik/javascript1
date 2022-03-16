@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Kalkulator Sederhana Java Script</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+
+<!--
+
+function hitung(){
+
+var myForm = document.form;
+var x=eval(myForm.x.value);
+var y=eval(myForm.y.value);
+var pil= myForm.opt.value;
+if (pil == "tambah") {
+var z = x + y;
+ }else if (pil == "kurang") {
+var z = x - y;
+ } else if (pil == "kali") {
+var z = x * y;
+ } else if (pil == "bagi") {
+var z = x / y;
+ }
+ myForm.hasil.value = z;
+ myForm.x.value = "";
+ myForm.y.value = "";
+}
+function resetForm(){
+document.form.reset();
+}
+
+//-->
+
+</script>
+<div align="center">
+<form name="form" action="#">
+<p>Bilangan 1  <input type="text" name="x" /></p>
+<p>Bilangan 2  <input type="text" name="y" /></p>
+<p>Hasil  <input type="text" name="hasil" disabled="true" /></p>
+<p>Operator <select name="opt"></p>
+ <option value="tambah"> + ( Tambah)</option>
+ <option value="kurang"> - ( Kurang )</option>
+ <option value="kali"> * ( Kali)</option>
+ <option value="bagi"> / ( Bagi)</option>
+</select>
+<input type="button" value="=" onClick="hitung()" />
+<input type="button" value="RESET" onClick="resetForm()" />
+
+		</form>
+	</body>
+</html>
